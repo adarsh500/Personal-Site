@@ -1,0 +1,241 @@
+/* Top Container */
+
+.top_cnt{
+  background-color: #0f3057;
+  color: white;
+  position: relative;
+  padding-top: 200px;
+  line-height: 1;
+  height: 558.78px;
+  width: 100%;
+}
+hr{
+  border: 6px dotted #eaf6f6;
+  width: 7%;
+  border-bottom: none;
+  margin: 60px auto;
+}
+
+
+
+/* Introducing Myself */
+
+.profile{
+  width: 30%;
+  margin: auto;
+}
+
+
+
+/* Animationg Top-Cloud */
+
+@keyframes top-cloud{
+  0%{ right: 0px;top: 50px;}
+  100%{right: 260px;top: 50px;}
+}
+.top-cloud{
+  position: absolute;
+  right: 260px;
+  top: 50px;
+  animation-name: top-cloud;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+
+/* Introduction-Description */
+@keyframes intro-description {
+  0%{margin-top: -90px;visibility: hidden;}
+  100%{margin-top: 0px;visibility: visible;}
+}
+.intro-description{
+  animation-name: intro-description;
+  animation-delay: -0.8s;
+  animation-duration: 2.5s;
+
+}
+
+
+/* Animating Bottom-Cloud */
+
+@keyframes bottom-cloud{
+  0%{left: 0px;top: 380px;}
+  100%{left: 300px;top: 380px;}
+}
+.bottom-cloud{
+  position: absolute;
+  left: 300px;
+  top: 380px;
+  display: block;
+  margin-bottom: 30px;
+  animation-name: bottom-cloud;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+
+
+/* Animating Mountain */
+@keyframes mountain{
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+
+}
+.mountain{
+  height: 400px;
+  width: 645px;
+  left: 420px;
+  animation-name:mountain;
+  animation-duration: 2.5s;
+  animation-delay: -2s;
+}
+body{
+  margin: 0;
+  text-align: center;
+  font-family: 'Montserrat',serif;
+  color: white;
+}
+h1{
+  margin-top: -50px;
+  font-family: 'Sacramento', cursive;
+  font-size: 562%;
+  color: #a6f6f1;
+}
+h2 {
+  font-family: 'Montserrat',sans-serif;
+  font-size: 200%;
+  color: #a6f6f1;
+  font-weight: normal;
+}
+h3{
+  font-family: 'Montserrat',sans-serif;
+  font-size: 180%;
+  color: #a2d5f2;
+}
+p{
+  line-height: 2;
+}
+
+
+/* Middle Container */
+.mid_cnt{
+background-color: #00587a;
+width: 100%;
+height: auto;
+}
+#list {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+#list li, #list img{
+  height: 140px;
+  display: inline-block;
+  padding: 10px 10px 0 10px;
+}
+#ht{
+  width: 25%;
+  left: 50px;
+  background-image: url('images/html.png') ;
+}
+#cs{
+  width: 25%;
+  left: 100px;
+  background-image: url('images/css.png') ;
+}
+
+/* Animating skill 1 */
+/* @keyframes skill-row1 {
+  0%{margin-left: -200px}
+  100%{margin-left: 355px}
+} */
+.skill-row1{
+  width: 50%;
+  margin: 100px auto;
+  text-align: left;
+  line-height: 2;
+  /* animation-name: skill-row1;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-delay: 10s */
+}
+
+/* Second skill */
+.skill-row2{
+  width: 50%;
+  margin: 100px auto 60px auto;
+  text-align: right;
+  line-height: 2;
+}
+
+/* Web development icon */
+#comp{
+  width: 25%;
+  float: left;
+  margin-right: 30px;
+}
+
+/* Digital Marketing icon */
+#digm{
+  width: 25%;
+  float: right;
+  margin-left: 30px;
+}
+
+/* Bottom Container */
+.bottom_cnt{
+background-color: #008891;
+width: 100%;
+padding: 0;
+}
+a.footer:link, a.footer:visited{
+  background-color: #0f3057;
+  color:white;
+  border: 1px solid #0f3057;
+  border-radius: 10px;
+  text-decoration: none;
+  padding: 10px 15px;
+  z-index: 1;
+}
+a.footer:hover{
+  transform: scale(70px,50px);
+  background-color: #1E62D0;
+  border: 1px solid #1E62D0;
+  color: white;
+  text-decoration: none;
+  /* padding: 15px 20px; */
+  z-index: 1;
+}
+#foot ul{
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+#foot li {
+  display: inline-block;
+  padding: 0 80px 0 0 ;
+}
+.contact-message{
+  width: 40%;
+  margin: 40px auto 60px;
+}
+a.button:link , a.button:visited {
+  border: 1px solid #1E62D0;
+  background-color: #1E62D0;
+  border-radius: 10px;
+  text-decoration: none;
+  padding: 20px 25px;
+  color: white;
+  z-index: 1;
+  }
+  a.button:hover , a.button:active {
+    background-color: #3D94F6;
+    z-index: 1;
+  }
+  .copyright{
+    padding: 20px;
+  }
